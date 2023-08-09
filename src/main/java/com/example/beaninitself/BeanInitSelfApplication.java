@@ -15,7 +15,6 @@ public class BeanInitSelfApplication {
         SpringApplication.run(BeanInitSelfApplication.class, args);
     }
 
-
     @Bean(value = "max", initMethod = "init")
 //    @SofaAsyncInit
     public MaxBean maxBean(){return new MaxBean();}
