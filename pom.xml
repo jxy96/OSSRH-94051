@@ -102,18 +102,18 @@
 
     <build>
         <plugins>
-                        <plugin>
-                            <groupId>org.springframework.boot</groupId>
-                            <artifactId>spring-boot-maven-plugin</artifactId>
-                            <configuration>
-                                <excludes>
-                                    <exclude>
-                                        <groupId>org.projectlombok</groupId>
-                                        <artifactId>lombok</artifactId>
-                                    </exclude>
-                                </excludes>
-                            </configuration>
-                        </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
@@ -170,5 +170,27 @@
             </plugin>
         </plugins>
     </build>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>actable</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>JieXuYang</name>
+            <email>18739575480@163.com</email>
+            <organization>io.github.jxy96</organization>
+        </developer>
+    </developers>
+
+    <scm>
+        <tag>master</tag>
+        <url>git@github.com:jxy96/OSSRH-94051.git</url>
+        <connection>git@github.com:jxy96/OSSRH-94051.git</connection>
+        <developerConnection>git@github.com:jxy96/OSSRH-94051.git</developerConnection>
+    </scm>
 
 </project>
